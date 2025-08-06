@@ -5,6 +5,7 @@ import Footer from '../component/Footer'
 import bgVideo from '../videos/background.mp4';
 import Service from '../component/Service';
 import Tec from '../component/Tec';
+import Teamm from '../component/Teamm';
 
 
 const para = {fontFamily: "'Inria Sans', Arial, sans-serif",color:'white',fontSize:"90px",BlobEvent} 
@@ -61,6 +62,7 @@ function Homepage() {
     </main>
     <Service/>
     <Tec/>
+    <Teamm/>
     <Footer/>
     
     </>
