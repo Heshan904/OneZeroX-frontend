@@ -3,6 +3,9 @@ import './homepage.css'
 import NaviBar from '../component/NaviBar'
 import Footer from '../component/Footer'
 import bgVideo from '../videos/background.mp4';
+import Service from '../component/Service';
+import Tec from '../component/Tec';
+import Teamm from '../component/Teamm';
 
 
 const para = {fontFamily: "'Inria Sans', Arial, sans-serif",color:'white',fontSize:"90px",BlobEvent} 
@@ -57,10 +60,11 @@ function Homepage() {
           <button style={{backgroundColor:'rgb(0, 255, 30)',padding:'10px 40px',borderRadius:'30px',textAlign:'center',color:'white',marginBottom:'20px'}}>Contact</button>
         </div>
     </main>
-    <div className="secondscreen">
-
-    </div>
+    <Service/>
+    <Tec/>
+    <Teamm/>
     <Footer/>
+    
     </>
   )
 }
