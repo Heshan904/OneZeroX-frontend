@@ -1,12 +1,9 @@
 /* Use relative units and flexbox for layout */
-.logo {
-    height: 4vw;
-    width: 4vw;
-}
+
 .home{
     display: flex;
     flex-direction: row;
-    gap: 4vw;
+    gap: 3vw;
 }
 .navi {
     display: flex;
@@ -17,11 +14,18 @@
     top: 0;
     width: 100%;
     padding: 1vw 4vw;
-    background-color: rgba(0, 255, 30, 0.2);
+    background:none;
     z-index: 100;
     box-sizing: border-box;
     border: none;
+    color: white; /* default color */
 }
+
+
+.navi.scrolled button {
+  color: #00ff1e; /* also change button text color if needed */
+}
+
 
 .btn {
     display: flex;
@@ -39,6 +43,7 @@ button {
     font-size: 1.5rem;
     cursor: pointer;
     transition: color 0.2s;
+    color: white;
 }
 
 button:hover {
@@ -67,12 +72,12 @@ button:hover {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .navi {
         padding: 1vw .5vw;
     }
     .btn {
-        gap: 10px;
+        gap: 5px;
         flex-direction: row;
         align-items: flex-end;
     }
@@ -80,8 +85,11 @@ button:hover {
         font-size: 1rem;
     }
     .logo {
-        height: 35px;
-        width: 35px;
+        height: 15px;
+        width: 15px;
+    }
+    .home{
+        flex-direction: row;
     }
 }
 
