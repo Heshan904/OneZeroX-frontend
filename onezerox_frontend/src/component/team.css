@@ -1,27 +1,53 @@
+/* Container Styles */
 .temain {
   width: 100%;
   min-height: 100vh;
   background-color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  flex-direction: column;
   gap: 30px;
 }
 
-.bmain{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding-left: 40px;
+/* Heading */
+.team-heading {
+  font-size: 60px;
+  text-align: right;
+  margin-right: 20px;
+  margin-left: auto;
 }
 
+@media (max-width: 768px) {
+  .team-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-heading {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* Box container for members */
+.bmain {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Individual team member box */
 .tbox {
   max-width: 400px;
-  max-height: fit-content;
-  width: 100%; /* Allows it to shrink on smaller screens */
-  height: auto; /* Allows content to grow */
+  width: 100%;
   display: flex;
   flex-direction: column;
   border: 2px solid #00ff1e;
@@ -31,39 +57,43 @@
   background-color: white;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.3);
 }
 
-.timg{
-    height: 350PX;
-    width: auto;
+.tbox:hover {
+  box-shadow: 0 4px 20px rgba(0, 255, 30, 0.2);
+  transform: translateY(-5px);
 }
-@media (max-width: 480px) {
-  .tbox {
-    padding: 15px;
-    max-width: 100%;
-  }
 
-  .timg {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-.team-heading {
-  font-size: 70px;
-  text-align: right;
-  margin-right: 20px;
-  margin-left: auto;
+/* Image Styling */
+.timg {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {
-  .team-heading {
-    font-size: 48px;
+  .timg {
+    height: 300px;
   }
 }
 
 @media (max-width: 480px) {
-  .team-heading {
-    font-size: 20px;
+  .tbox {
+    padding: 15px;
   }
+
+  .timg {
+    height: 250px;
+  }
+}
+
+/* Optional Paragraph Styling for Readability */
+.tpara p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: justify;
 }
