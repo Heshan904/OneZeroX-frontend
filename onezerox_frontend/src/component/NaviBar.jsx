@@ -9,11 +9,9 @@ function NaviBar() {
 
   const pageStyles = {
     '/project': 'project-button',
-    '/about': 'about-button',
-    '/contact': 'contact-button',
     '/inside' : 'inside-button',
     '/contact':'contact-button',
-    '/about':'about-button'
+    '/about' : 'about-button'
   };
 
   const currentPageClass = pageStyles[location.pathname] || '';

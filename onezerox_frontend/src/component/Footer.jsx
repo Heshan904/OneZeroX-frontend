@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Link } from 'react-router-dom'
 
 import fc from '../images/facebook.png'
 import tw from '../images/twitter.png'
@@ -22,10 +23,10 @@ function Footer() {
         <div className="footer-section links">
           <h5>Quick Links</h5>
           <ul>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/careers">Project</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to={"/project"}><a href="/careers">Project</a></Link></li>
+            <li><Link to={"/inside"}><a href="/contact">Inside</a></Link></li>
+            <li><Link to={"/contact"}><a href="/contact">Contact</a></Link></li>
+            <li><Link to={"/about"}><a href="/about">About Us</a></Link></li>
           </ul>
         </div>
 
