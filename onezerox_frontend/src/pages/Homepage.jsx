@@ -8,7 +8,6 @@ import Tec from '../component/Tec';
 import Teamm from '../component/Teamm';
 
 
-const para = {fontFamily: "'Inria Sans', Arial, sans-serif",color:'white',fontSize:"90px",BlobEvent} 
 
 const messages = [
   "Our Goal is <br/>Customer Satisfaction",
@@ -49,13 +48,13 @@ function Homepage() {
         muted
         playsInline
       />
-        <div className='para' >
-            <h1
-            style={para}
-            className={fade ? 'fade-in' : 'fade-out'}
+        <div className='para'>
+          <h1
+            className={`animated-heading ${fade ? 'fade-in' : 'fade-out'}`}
             dangerouslySetInnerHTML={{ __html: messages[current] }}
           />
         </div>
+
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
           <button style={{backgroundColor:'rgb(0, 255, 30)',padding:'10px 40px',borderRadius:'30px',textAlign:'center',color:'white',marginBottom:'20px'}}>Contact</button>
         </div>

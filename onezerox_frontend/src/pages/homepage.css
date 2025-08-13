@@ -1,4 +1,38 @@
 
+.para h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 6rem); /* adjusts from small to large screens */
+  line-height: 1.2;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 90px;
+  transition: opacity 0.5s ease-in-out;
+  word-wrap: break-word;
+  font-size: 2rem;
+  text-align: left;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+  font-family: 'Inria Sans', Arial, sans-serif;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .para h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .para h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .para h1 {
+    font-size: 5rem;
+  }
+}
 
 
 .mainhome{
@@ -21,12 +55,14 @@
 }
 .fade-in {
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 0.5s ease-in;
 }
+
 .fade-out {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.5s ease-out;
 }
+
 .bg-video {
   position: fixed;
   top: 0;

@@ -49,6 +49,13 @@ button {
 button:hover {
     color: #03aa21;
 }
+.project-button { color: #00ff11; }
+.about-button { color: #00ff11; }
+.contact-button { color: #00ff11; }
+.inside-button { color: #00ff11; }
+.contact-button { color: #00ff11; }
+.about-button { color: #00ff11; }
+
 
 /* Responsive styles */
 @media (max-width: 900px) {
