@@ -11,6 +11,9 @@ function NaviBar() {
     '/project': 'project-button',
     '/about': 'about-button',
     '/contact': 'contact-button',
+    '/inside' : 'inside-button',
+    '/contact':'contact-button',
+    '/about':'about-button'
   };
 
   const currentPageClass = pageStyles[location.pathname] || '';
@@ -36,8 +39,8 @@ function NaviBar() {
 
       <div className='btn'>
         <Link to={"/inside"}><button className={currentPageClass}>Inside</button></Link>
-        <button className={currentPageClass}>Contact</button>
-        <button className={currentPageClass}>About</button>
+        <Link to={"/contact"}><button className={currentPageClass}>Contact</button></Link>
+        <Link to={"/about"}><button className={currentPageClass}>About</button></Link>
       </div>
     </div>
   );

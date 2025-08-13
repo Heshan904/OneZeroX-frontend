@@ -16,7 +16,7 @@
 .gallery-subtitle {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #ccc;
+  color: #000000;
 }
 
 .gallery-grid {
@@ -27,7 +27,7 @@
 }
 
 .gallery-card {
-  background-color: #005b08;
+  background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -62,7 +62,7 @@
 
 .gallery-info p {
   font-size: 1rem;
-  color: #aaa;
+  color: #000000;
 }
 .slider {
   width: 100%;
