@@ -2,6 +2,7 @@
   "name": "onezerox_frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@cloudinary/react": "^1.14.3",
     "@cloudinary/url-gen": "^1.21.0",
@@ -42,4 +43,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
