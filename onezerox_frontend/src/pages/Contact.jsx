@@ -37,7 +37,7 @@ function Contact() {
 
     <div className="mbox">
       <h2>Contact Us</h2>
-      <form ref={form} onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
+      <form ref={form} onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
         <input type="text" name="user_name" placeholder="Your Name" required />
         <textarea name="message" placeholder="Your Message" rows="5" required />
         <button type="submit" className="sbutton">Send</button>
