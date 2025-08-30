@@ -1,0 +1,8 @@
+.cmain{
+    height: 100vh;
+    width: 100vw;
+}
+.mbox{
+    height: fit-content;
+    margin-top: 50px;
+}
