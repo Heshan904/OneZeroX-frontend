@@ -36,13 +36,15 @@ function Contact() {
     <div className="cmain">
 
     <div className="mbox">
-      <h2>Contact Us</h2>
-      <form ref={form} onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
-        <input type="text" name="user_name" placeholder="Your Name" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required />
+      <h1 className="gallery-title">Contact Us</h1>
+      <form ref={form} onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", gap: "40px", width:"100%"}}>
+        <input type="text" name="user_name" placeholder="Your Name" required className="text" />
+        <textarea name="message" placeholder="Your Message" rows="5" required className="text"/>
         <button type="submit" className="sbutton">Send</button>
       </form>
+      
     </div>
+    <img src={'https://res.cloudinary.com/da2wbtci0/image/upload/v1755115110/flogo_ag9ulf.png'} alt="" />
     </div>
 
     <Footer/>
