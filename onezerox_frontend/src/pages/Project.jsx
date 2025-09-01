@@ -23,11 +23,7 @@ function Project() {
           <div
             className="img"
             style={{
-              backgroundImage: `url(${comweb})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center', // You can adjust this
-              width: '100%',
-                  // You can also use a fixed width if needed
+              backgroundImage: `url(${comweb})`
             }}
           ></div>
           <div className="pdis">
