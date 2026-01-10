@@ -36,7 +36,7 @@ function Footer() {
             <a href='https://www.facebook.com/share/19UoitDXzs/' rel='noopener noreferrer' target='_blank'><button><img src={fc} alt="" style={{height:'50px',widows:'50px'}}/></button></a>
             <a href='https://x.com/hasitha904?t=lEneXq7dhzVTdPKIIwyu3g&s=35' rel='noopener noreferrer' target='_blank'><button><img src={tw} alt="" style={{height:'50px',widows:'50px'}}/></button></a>
             <a href='https://youtube.com/@mindrelaxation904?si=ZtEssJ2KwD9sVduH' rel='noopener noreferrer' target='_blank'><button><img src={yt} alt="" style={{height:'50px',widows:'50px'}}/></button></a>
-            <a href='https://wa.me/+94702913904' rel='noopener noreferrer' target='_blank'><button><img src={wa} alt="" style={{height:'50px',widows:'50px'}}/></button></a>
+            <a href='https://chat.whatsapp.com/GMIU84dtWFz9gaiMfDY7fQ' rel='noopener noreferrer' target='_blank'><button><img src={wa} alt="" style={{height:'50px',widows:'50px'}}/></button></a>
           </div>
         </div>
       </div>

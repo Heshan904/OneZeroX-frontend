@@ -34,8 +34,13 @@ function Homepage() {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
-
-
+  
+  const handleContactClick = () => {
+    window.open(
+      "https://chat.whatsapp.com/GMIU84dtWFz9gaiMfDY7fQ",
+      "_blank"
+    );
+  };
   return (
     <>
     <NaviBar/>
@@ -56,7 +61,7 @@ function Homepage() {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-          <button style={{backgroundColor:'rgb(0, 255, 30)',padding:'10px 40px',borderRadius:'30px',textAlign:'center',color:'white',marginBottom:'20px'}}>Contact</button>
+          <button style={{backgroundColor:'rgb(0, 255, 30)',padding:'10px 40px',borderRadius:'30px',textAlign:'center',color:'white',marginBottom:'20px'}} onClick={handleContactClick}>Contact</button>
         </div>
     </main>
     <Service/>
