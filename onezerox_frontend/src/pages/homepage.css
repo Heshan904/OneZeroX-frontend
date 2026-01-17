@@ -4,7 +4,7 @@
   line-height: 1.2;
   text-align: left;
   font-weight: bold;
-  margin-top: 90px;
+  margin-top: 50px;
   transition: opacity 0.5s ease-in-out;
   word-wrap: break-word;
   font-size: 2rem;
@@ -14,11 +14,16 @@
   font-family: 'Inria Sans', Arial, sans-serif;
 }
 
+.AIimage{
+  width: 25rem;
+  height: auto;
 
+}
 
 @media screen and (min-width: 480px) {
   .para h1 {
     font-size: 3rem;
+    
   }
 }
 
@@ -38,15 +43,15 @@
 .mainhome{
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:1px;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 .para{
-    margin-left: 40px;
-    margin-top: 10%;
+    margin-left: 50px;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
     gap: 10px;

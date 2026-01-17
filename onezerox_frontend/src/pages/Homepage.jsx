@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './homepage.css'
 import NaviBar from '../component/NaviBar'
 import Footer from '../component/Footer'
-import bgVideo from '../videos/background.mp4';
+import bgVideo from '../videos/0117(1).mp4';
 import Service from '../component/Service';
 import Tec from '../component/Tec';
 import Teamm from '../component/Teamm';
+import AI from '../images/template (1).png';
 
 
 
@@ -60,9 +61,10 @@ function Homepage() {
           />
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop:'210px' }}>
           <button style={{backgroundColor:'rgb(0, 255, 30)',padding:'10px 40px',borderRadius:'30px',textAlign:'center',color:'white',marginBottom:'20px'}} onClick={handleContactClick}>Contact</button>
         </div>
+        <img src={AI} alt="AI Template" className='AIimage'/>
     </main>
     <Service/>
     <Tec/>
